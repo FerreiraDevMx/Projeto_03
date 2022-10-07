@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 110vh;
+    min-height: 800px;
+    background-image: url(../imagens/capa.png);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 2%;
+}
+
+header nav{
+    float: right;
+}
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+
+}
+
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+
+header nav.mobile-menu{
+    display: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/menu.png);
+    background-size: 100% 100%;
+} 
+
+/*nav.mobile-menu:hover ul{
+    opacity: 1;
+}*/
+
+nav.mobile-menu ul{
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    transition: 0.4s;
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav.desktop-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+header .logotipo a img{
+    float: left;
+    width: 160px;
+}
+
+.chamada-1{
+    float: right;
+    margin: 220px 150px;
+    max-width: 600px;
+}
+
+.chamada-1 h2{
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+}
+
+.chamada-1 p{
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+
+section.sessao1{
+    width: 100%;
+    background-color: #472562;
+    padding: 0 2%;
+    height: 400px;
+}
+
+section.sessao1 .container{
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+    float: left;
+    width: 50%;
+    color: white;
+    margin-top: 60px;
+    position: relative;
+    left: 55px;
+    padding-left: 80px;
+}
+
+.texto-sessao1 h2{
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.texto-sessao1 p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.texto-sessao1 ul{
+    list-style-position: inside;
+    font-size: 15px;
+}
+
+.texto-sessao1 li{
+    margin-top: 10px;
+}
+
+.texto-sessao1 input[type="button"]{
+    margin-top: 20px;
+    background-color: #FF703D;
+    width: 165px;
+    height: 45px;
+    border: 0;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.device-sessao1{
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -30px;
+    height: 100%;
+    background-image: url(../imagens/device.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+section.sessao2{
+    width: 100%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+section.sessao2 h2{
+    color: #472663;
+}
+
+section.sessao2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+
+section.sessao2 img{
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
+section.sessao3 {
+    width: 100%;
+}
+
+.parte1{
+    width: 50%;
+    color: white;
+    background-color: #835FA7;
+    padding: 140px 0 90px 0;
+    float: left;
+}
+
+.wraper-parte1 {
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+
+.parte1 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.parte1 p{
+    margin-top: 10px;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.parte2{
+    width: 50%;
+    float: left;
+    padding: 140px 0 90px 0;
+}
+
+.scrollEquipe{
+    max-width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.scroll-wraper{
+    width: 100%;
+}
+
+.sobre-autor{
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+}
+
+.titulo-autor{
+    float: left;
+    width: 100%;
+}
+
+.wraper-titulo-autor{
+    float: left;
+}
+
+.wraper-titulo-autor p{
+    color: #232323;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.titulo-autor .img-autor{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/actor1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    margin-left: 10px;
+}
+
+.texto-autor{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.texto-autor{
+    font-size: 15px;
+}
+
+.slider-bullets{
+    width: 100%;
+    float: left;
+    padding-left: 50px;
+    margin-top: 12px;
+}
+
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(200, 200, 200);
+}
+
+section.sessao4{
+    width: 100%;
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+.form{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    color: white;
+}
+
+.form h2{
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.form p{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type="text"]{
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    line-height: 48px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    padding-left: 8px;
+}
+
+.form form textarea{
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    padding: 15px 8px;
+    height: 160px;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+.form form input[type="submit"]{
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    background-color: #FF703D;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.map-wraper{
+    width: 50%;
+    float: left;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+.map-wraper h2{
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.map-wraper2{
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.map-wraper3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+
+}
+
+.map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+}
+
+footer p:first-child{
+    float: left;
+}
+
+footer p:last-child{
+    float: right;
+}
+
+@media screen and (max-width:768px){
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        
+    }
+
+    header nav.desktop-menu{
+        display: none;
+    }
+    
+    header nav.mobile-menu{
+        display: block;
+    } 
+
+    .chamada-1{
+        float: none;
+        margin: 40px 0;
+        width: 100%;
+        margin: 170px 0;
+        text-align: center;
+    }
+    
+    .chamada-1 h2{
+        font-size: 30px;
+        font-weight: normal;
+
+        color: white;
+    }
+    
+    .chamada-1 p{
+        font-size: 16px;
+        color: white;
+        margin-top: 15px;
+    }
+
+    section.sessao1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .texto-sessao1{
+        float: none;
+        position: static;
+        margin-top: 0;
+        width: 100%;
+        display: inline-block;
+        padding-left: 0;
+    }
+
+    .texto-sessao1 ul{
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .texto-sessao1 ul li{
+        float: none;
+        text-align: left;
+    }
+
+    .device-sessao1{
+        display: none;
+    }
+
+    .texto-sessao1 input{
+        display: inline-block;
+    }
+
+    section.sessao2{
+        padding-top: 30px;
+    }
+
+    .sessao4 .container{
+        text-align: center;
+        float: none;
+    }
+
+    .map-wraper{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 2%;
+    }
+
+
+    .map-wraper2{
+        width: 90%;
+        padding-top: 90%;
+        display: inline-block;
+        position: relative;
+        max-width: none;
+    }
+    
+    .map-wraper3{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .btn{
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .parte1{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .parte2{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    section.sessao2 img{
+        top: 10px;
+        margin-top: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 410px) {
+    footer{
+        text-align: center;
+    }
+
+    footer p:first-child{
+        float: none;
+    }
+    
+    footer p:last-child{
+        float: none;
+        margin-top: 10px;
+    }
+    
+}
